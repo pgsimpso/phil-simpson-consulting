@@ -190,7 +190,6 @@
 <div class="text-center mb-12">
 <h2 class="font-headline text-4xl font-bold text-primary mb-4">Contact Us</h2>
 <p class="text-on-surface-variant">Tell us about your project requirements and let's build something exceptional.</p>
-<p class="text-on-surface-variant mt-2 text-sm">Optional SMS follow-up is available for consultation requests and scheduling.</p>
 </div>
 <form class="space-y-6">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -211,20 +210,24 @@
 <label class="text-sm font-semibold text-primary px-1">Phone Number</label>
 <input class="w-full px-4 py-3 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-secondary/20 focus:bg-white transition-all" placeholder="+1 (555) 000-0000" type="tel"/>
 </div>
-<!-- SMS Consent (immediately after Phone Number) -->
+<div class="rounded-2xl bg-surface-container-low border border-outline-variant/10 p-5 md:p-6 space-y-4">
+<div>
+<p class="text-sm font-semibold text-primary">SMS Updates <span class="ml-2 inline-flex rounded-full bg-surface-container-high px-3 py-1 align-middle text-[11px] font-semibold uppercase tracking-[0.16em] text-on-surface-variant">Optional</span></p>
+</div>
 <label class="flex items-start gap-3 cursor-pointer group">
-<div class="relative mt-1">
+<div class="relative mt-0.5 shrink-0">
 <input class="peer appearance-none w-5 h-5 border-2 border-outline-variant rounded-md checked:bg-secondary checked:border-secondary transition-all" type="checkbox"/>
 <span class="material-symbols-outlined absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-xs opacity-0 peer-checked:opacity-100 pointer-events-none">check</span>
 </div>
-<span class="text-sm text-on-surface-variant leading-tight">
+<span class="text-sm text-on-surface leading-relaxed">
                                     I agree to receive SMS messages from Phil Simpson Consulting about my inquiry and scheduling.
                                 </span>
 </label>
-<div class="space-y-4 pt-4 border-t border-outline-variant/10">
-<p class="text-sm text-on-surface-variant leading-relaxed">
+<div class="pt-4 border-t border-outline-variant/10">
+<p class="text-xs md:text-sm text-on-surface-variant leading-relaxed">
                                     Optional. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out or HELP for help. Consent is not required to submit this form. Review our <a href="/privacy-policy/" class="text-blue-600 underline hover:text-blue-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Privacy Policy</a> and <a href="/sms-terms/" class="text-blue-600 underline hover:text-blue-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">SMS Terms</a>.
                                 </p>
+</div>
 </div>
 <button class="w-full py-4 bg-secondary text-on-secondary rounded-xl font-bold text-lg hover:opacity-90 active:scale-[0.98] transition-all shadow-lg shadow-secondary/20" type="submit">
                             Submit Consultation Request
